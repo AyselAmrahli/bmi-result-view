@@ -1,0 +1,37 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.bmi-bar {
+  width: calc(M.$main_width / 1.2);
+  height: calc(M.$space-xs * 2);
+  border-radius: M.$space-s;
+  background-color: C.$grey;
+  margin: calc(M.$space-s * 2) auto 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: calc(M.$space-xs * 2);
+    width: 0;
+    height: 0;
+    border: calc(M.$space-s / 3) solid transparent;
+    border-top: calc(M.$space-s / 2) solid C.$blue;
+    border-bottom: 0;
+  }
+
+  &_sector {
+    height: 100%;
+
+    &.normal {
+      border-left: 2px solid C.$white;
+      border-right: 2px solid C.$white;
+    }
+
+    &.active {
+      background-color: C.$green;
+    }
+  }
+}

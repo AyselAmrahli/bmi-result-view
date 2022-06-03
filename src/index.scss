@@ -1,6 +1,10 @@
 @use './assets/sass/colors' as C;
 @use './assets/sass/font' as F;
 
+* {
+  box-sizing: border-box;
+}
+
 html,
 body,
 #root {

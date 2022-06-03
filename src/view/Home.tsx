@@ -3,6 +3,7 @@ import { ETextColor, ETextDisplay, ETextSize, ETextWeight } from '../utils/enum'
 
 import Text from '../components/Text';
 import Whitebox from '../components/Whitebox';
+import BMIBar from '../components/BMIBar';
 
 
 const Home: FC = () => {
@@ -17,6 +18,8 @@ const Home: FC = () => {
         <Text color={ETextColor.BLUE} size={ETextSize.XL} weight={ETextWeight.BOLD}>
           88.89
         </Text>
+
+        <BMIBar />
       </div>
     </Whitebox>
   )

@@ -19,7 +19,7 @@ const Home: FC = () => {
           88.89
         </Text>
 
-        <BMIBar />
+        <BMIBar score={89} />
       </div>
     </Whitebox>
   )

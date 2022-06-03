@@ -1,18 +1,12 @@
 @use '../../assets/sass/main' as M;
 @use '../../assets/sass/colors' as C;
 
-.bmi-bar {
-  width: calc(M.$main_width / 1.2);
+.bmi-bar--wrapper {
+  width: calc(M.$main_width / 2);
   height: calc(M.$space-xs * 2);
-  border-radius: M.$space-s;
-  background-color: C.$grey;
   margin: calc(M.$space-s * 2) auto 0;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
   position: relative;
-
-  &::after {
-    content: "";
+  .bmi-indicator {
     position: absolute;
     bottom: calc(M.$space-xs * 2);
     width: 0;
@@ -21,6 +15,16 @@
     border-top: calc(M.$space-s / 2) solid C.$blue;
     border-bottom: 0;
   }
+}
+
+.bmi-bar {
+  width: 100%;
+  height: 100%;
+  border-radius: M.$space-s;
+  background-color: C.$grey;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  overflow: hidden;
 
   &_sector {
     height: 100%;

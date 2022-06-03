@@ -23,3 +23,9 @@ export enum ETextDisplay {
 export enum ETextWeight {
     BOLD = 'bold',
 }
+
+export enum EBMIResult {
+    UNDERWEIGHT = 'underweight',
+    NORMAL = 'normal',
+    OVERWEIGHT = 'overweight',
+}

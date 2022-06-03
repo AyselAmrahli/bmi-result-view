@@ -1,0 +1,57 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.text {
+
+    // colors
+    &-color--white {
+    	color: C.$white;
+    }
+		&-color--blue {
+			color: C.$blue;
+		}
+		&-color--green {
+			color: C.$green;
+		}
+    &-color--grey {
+    	color: C.$grey;
+    }
+    &-color--grey-dark {
+    	color: C.$grey-dark;
+    }
+
+    // weights
+    &-weight--bold {
+      font-weight: bold;
+    }
+
+    // size
+    &-size--xs {
+			font-size: M.$font_xs;
+			line-height: M.$font_s;
+    }
+    &-size--s {
+			font-size: M.$font_s;
+			line-height: M.$font_m;
+    }
+    &-size--m {
+			font-size: M.$font_m;
+			line-height: M.$font_l;
+    }
+    &-size--l {
+			font-size: M.$font_l;
+			line-height: M.$font_xl;
+    }
+    &-size--xl {
+			font-size: calc(M.$font_xl + M.$font_s);
+			line-height: M.$font_xl + 4px;
+    }
+
+    // display
+    &-display--block {
+      display: block;
+    }
+		&-display--inline-block {
+			display: inline-block;
+		}
+}

@@ -1,0 +1,16 @@
+@use './assets/sass/colors' as C;
+@use './assets/sass/font' as F;
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  background-color: C.$grey-lighter;
+  font-family: rubik-regular;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

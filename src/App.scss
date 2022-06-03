@@ -1,0 +1,10 @@
+@use './assets/sass/main' as M;
+
+.App {
+  height: 100%;
+  @include M.flex-center;
+}
+
+.centered {
+  text-align: center;
+}

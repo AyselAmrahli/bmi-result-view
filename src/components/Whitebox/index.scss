@@ -1,0 +1,13 @@
+@use '../../assets/sass/main' as M;
+@use '../../assets/sass/colors' as C;
+
+.whitebox {
+  background: C.$white;
+  min-width: M.$main_width;
+  max-width: M.$main_width;
+  min-height: calc(M.$main_width / 3);
+  padding: 20px;
+  margin: auto;
+  border-radius: 8px;
+  box-shadow: -4px 4px 16px rgb(159 159 159 / 24%);
+}

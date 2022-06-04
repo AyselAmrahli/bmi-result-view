@@ -7,8 +7,9 @@ const useBMIResult = (score: number) => {
 
   useEffect(() => {
     if (score < 30) setResult(EBMIResult.UNDERWEIGHT)
-    if (score > 90) setResult(EBMIResult.OVERWEIGHT)
-    else setResult(EBMIResult.NORMAL)
+    else if (score > 90 && score <= 120) setResult(EBMIResult.OVERWEIGHT)
+    else if (score >= 30 && score <= 90) setResult(EBMIResult.NORMAL)
+    else setResult('')
   },[score])
 
   return [result]

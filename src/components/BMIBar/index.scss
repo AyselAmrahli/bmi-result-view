@@ -23,7 +23,7 @@
   border-radius: M.$space-s;
   background-color: C.$grey;
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 2fr 1fr;
   overflow: hidden;
 
   &_sector {

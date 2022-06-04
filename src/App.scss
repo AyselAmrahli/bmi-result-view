@@ -1,10 +1,26 @@
 @use './assets/sass/main' as M;
+@use './assets/sass/colors' as C;
 
 .App {
   height: 100%;
   @include M.flex-center;
+  flex-direction: column;
 }
 
 .centered {
   text-align: center;
+}
+
+// just for test input
+.just-for-test {
+  position: relative;
+  top: M.$space-s;
+  min-width: calc(M.$main_width / 2);
+  height: calc(M.$space-m);
+  border: 1px solid C.$green;
+  border-radius: M.$space-xs;
+  outline: none;
+  padding: 0 M.$space-s;
+  font-size: M.$font_s;
+  color: C.$grey-dark;
 }
